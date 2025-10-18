@@ -45,7 +45,7 @@ const OrderPage = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-black ">
         <div className="md:col-span-2">
           <div className="bg-white shadow rounded-lg p-6">
             <h3 className="text-lg font-semibold mb-4">Your details</h3>
@@ -78,15 +78,15 @@ const OrderPage = () => {
           <div className="bg-white shadow rounded-lg p-4">
             <img src={car.image} alt={`${car.make} ${car.model}`} className="w-full h-40 object-cover rounded-md mb-4" />
             <h4 className="font-semibold">{car.year} {car.make} {car.model}</h4>
-            <p className="text-sm text-gray-500">{car.mileage.toLocaleString()} miles • {car.color}</p>
+            <p className="text-sm text-black">{car.mileage.toLocaleString()} miles • {car.color}</p>
             <div className="mt-4">
-              <div className="text-sm text-gray-600">Quantity</div>
+              <div className="text-sm text-black">Quantity</div>
               <div className="text-lg font-bold">{qty}</div>
             </div>
             <div className="mt-4 border-t pt-4">
-              <div className="text-sm text-gray-600">Price each</div>
+              <div className="text-sm text-black">Price each</div>
               <div className="text-xl font-bold">${car.price.toLocaleString()}</div>
-              <div className="text-sm text-gray-600">Total</div>
+              <div className="text-sm text-black">Total</div>
               <div className="text-2xl font-extrabold">${total.toLocaleString()}</div>
             </div>
           </div>

@@ -8,7 +8,7 @@ const CarsPage = () => {
   const handleCart = () => alert('Cart clicked');
 
   return (
-    <div className="bg-white min-h-screen w-full">
+    <div className="bg-white min-h-screen w-full text-black">
       <Navbar onOrderClick={handleOrder} onCartClick={handleCart} />
       <CarList />
       <Footer />
