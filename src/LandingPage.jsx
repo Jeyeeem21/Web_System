@@ -7,21 +7,23 @@ import Card from './components/Card';
 import "./App.css";
 import Footer from './components/Footer';
 import Contact from './components/Contact';
+import { Car, CreditCard, Search } from 'lucide-react';
 
 function LandingPage() {
   const handleOrder = () => alert('Order clicked');
   const handleCart = () => alert('Cart clicked');
 
   const features = [
-    { title: 'Wide Selection', icon: '🚗', description: 'Browse hundreds of cars from trusted sellers and dealers across the country.' },
-    { title: 'Easy Financing', icon: '�', description: 'Flexible financing options and transparent loan terms to fit your budget.' },
-    { title: 'Trusted Inspections', icon: '🔍', description: 'Pre-purchase inspections and vehicle history reports for peace of mind.' },
+    { title: 'Wide Selection', icon: <Car size={48} />, description: 'Browse hundreds of cars from trusted sellers and dealers across the country.' },
+    { title: 'Easy Financing', icon: <CreditCard size={48} />, description: 'Flexible financing options and transparent loan terms to fit your budget.' },
+    { title: 'Trusted Inspections', icon: <Search size={48} />, description: 'Pre-purchase inspections and vehicle history reports for peace of mind.' },
   ];
 
   return (
     <div className="bg-white min-h-screen w-full">
       <Navbar onOrderClick={handleOrder} onCartClick={handleCart} />
-      <Hero />
+  <Hero />
+
 
       <section id="features" className="w-full py-24 bg-gradient-to-b from-white to-gray-50">
         <div className="w-full px-6 md:px-12 lg:px-20 xl:px-32">

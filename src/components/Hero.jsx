@@ -14,7 +14,12 @@ const Hero = () => {
           Browse reliable listings, compare prices, get financing, and book
           inspections — everything you need to buy your next vehicle in one place.
         </p>
-        <Button label={'Browse Cars'} variant={'primary'} className={'px-8 py-4 text-lg'} />
+        <Button
+          label={'Browse Cars'}
+          variant={'primary'}
+          className={'px-8 py-4 text-lg'}
+          onClick={() => { history.pushState(null, '', '/cars'); window.dispatchEvent(new PopStateEvent('popstate')); }}
+        />
       </div>
   <div className="w-full md:w-1/2 flex items-center justify-center">
         <img

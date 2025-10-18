@@ -1,13 +1,8 @@
-import LandingPage from "./landingpage.jsx";
+import React from 'react';
+import LandingPage from './landingpage';
 
 function App() {
-  return (
-    <div>
-      {/* Other sections (Hero, About, etc.) */}
-      <LandingPage />
-      {/* Footer, etc. */}
-    </div>
-  );
+  return <LandingPage />;
 }
 
 export default App;
