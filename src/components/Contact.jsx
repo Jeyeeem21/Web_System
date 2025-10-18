@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from './button';
 
 const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -33,7 +34,8 @@ const Contact = () => {
           </div>
 
           <div>
-            <button type="submit" className="bg-indigo-600 text-white px-6 py-2 rounded-md hover:bg-indigo-700">Send Message</button>
+             {/* <Button label={'Browse Cars'} variant={'primary'} className={'px-8 py-4 text-center text-lg'} /> */}
+             <Button label={'Send Message'} variant={'secondary'} className={'px-8 py-4 text-center text-lg'} />
           </div>
         </form>
       </div>

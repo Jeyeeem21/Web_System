@@ -45,7 +45,7 @@ function LandingPage() {
           <h3 className="text-4xl md:text-5xl font-bold mb-6">Ready to Launch Your Next Project?</h3>
           <p className="mb-10 text-lg text-indigo-100">Join thousands of developers who trust our modern UI components to build exceptional experiences.</p>
           <div className="flex items-center justify-center">
-          <Button label={'Explore Cars'} variant={'white'} />
+          <Button label={'Explore Cars'} variant={'cta'} />
           </div>
         </div>
       </section>

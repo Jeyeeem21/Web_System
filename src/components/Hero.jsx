@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section id='home' className="w-full flex flex-col md:flex-row items-center justify-between px-0 py-0 min-h-screen">
       <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-20 md:py-32 gap-12">
-        <div className="w-full md:w-1/2 flex flex-col justify-center">
+  <div className="w-full md:w-1/2 flex flex-col justify-center items-center text-center">
         <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 mb-6 leading-tight">
           Find Your Next Car with{' '}
           <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Confidence</span>
@@ -17,7 +17,7 @@ const Hero = () => {
         <Button
           label={'Browse Cars'}
           variant={'primary'}
-          className={'px-8 py-4 text-lg'}
+          className={'px-8 py-4 text-center text-lg'}
           onClick={() => { history.pushState(null, '', '/cars'); window.dispatchEvent(new PopStateEvent('popstate')); }}
         />
       </div>

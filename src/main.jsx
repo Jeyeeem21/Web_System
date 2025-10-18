@@ -4,6 +4,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import CarsPage from './CarsPage'
+import OrderPage from './OrderPage'
 
 function Router() {
   const [path, setPath] = useState(window.location.pathname + window.location.hash);
@@ -15,6 +16,7 @@ function Router() {
   }, []);
 
   // Decide rendering based on path
+  if (path.startsWith('/order')) return <OrderPage />;
   if (path.startsWith('/cars')) return <CarsPage />;
   return <App />;
 }

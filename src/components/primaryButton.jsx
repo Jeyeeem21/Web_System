@@ -22,15 +22,16 @@
 
 import React from 'react';
 
-const PrimaryButton = ({ label, onClick, type = "button" }) => {
+const PrimaryButton = ({label, onClick, type = "button"}) => {
     return (
-        <button
-            type={type}
-            onClick={onClick}
-            className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2.5 rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300 font-semibold"
+        <button 
+        type = {type}
+        onClick = {onClick}
+        className='bg-gradient-to-r from indigo-600 to-purple-600 text-white px-6 py-2.5 rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300 font-semibold'
         >
             {label}
         </button>
     );
-};
+
+}
 export default PrimaryButton;

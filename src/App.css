@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
-/* Make the page full-bleed and white. Remove the centered max-width so
-   the layout stretches edge-to-edge and the dark frame disappears. */
+
 html, body, #root {
   height: 100%;
   background: #ffffff;
