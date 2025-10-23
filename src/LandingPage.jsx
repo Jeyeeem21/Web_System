@@ -20,7 +20,7 @@ function LandingPage() {
   ];
 
   return (
-    <div className="bg-white min-h-screen w-full">
+  <div className="bg-white min-h-screen w-full mobile-safe">
       <Navbar onOrderClick={handleOrder} onCartClick={handleCart} />
   <Hero />
 

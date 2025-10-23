@@ -54,3 +54,10 @@ html, body, #root {
 .avatar{
   border-radius: 5px;
 }
+
+/* Ensure content is not hidden behind the fixed mobile footer */
+@media (max-width: 767px) {
+  .mobile-safe {
+    padding-bottom: 84px; /* height of footer + some spacing */
+  }
+}
